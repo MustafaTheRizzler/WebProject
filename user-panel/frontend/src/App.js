@@ -1,8 +1,19 @@
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+import Dashboard from './Pages/Dashboard';
+
+const App = () => {
   return (
-      <div className="flex items-center justify-center h-screen bg-gray-100">
-          <h1 className="text-4xl font-bold text-blue-600">User Panel</h1>
-      </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
-}
+};
+
 export default App;
