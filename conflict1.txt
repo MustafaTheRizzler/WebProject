@@ -1,2 +1,6 @@
 line 1 message
+<<<<<<< HEAD
 line 2 messages 123 added by conflict branch
+=======
+line 2 messages
+>>>>>>> feature-update
